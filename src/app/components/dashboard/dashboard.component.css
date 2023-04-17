@@ -1,4 +1,23 @@
 .canvasStyle {
+    flex: 1;
     height: 600px;
     width: 600px;
+}
+
+.designFlex {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.borders {
+    padding: 1rem 0;
+    border-bottom: 2px dashed #cbcbcb;
+}
+
+.dataStyle{
+    flex: 1;
 }
