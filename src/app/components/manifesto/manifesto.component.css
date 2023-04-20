@@ -1,0 +1,6 @@
+.container {
+    width: 95%;
+    margin: 5rem auto;
+    display: flex;
+    gap: 2rem;
+}

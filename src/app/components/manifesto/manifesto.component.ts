@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./manifesto.component.css']
 })
 export class ManifestoComponent {
-
+  panelOpenState: boolean = false;
 }
