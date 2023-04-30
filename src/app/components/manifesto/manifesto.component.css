@@ -1,3 +1,7 @@
 .container {
     margin: 0 2rem;
 }
+
+mat-list-item{
+    padding: 2.5rem;
+}
