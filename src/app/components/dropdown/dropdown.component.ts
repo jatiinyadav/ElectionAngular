@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IDropdownSettings } from 'ng-multiselect-dropdown';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-dropdown',
@@ -7,6 +8,11 @@ import { IDropdownSettings } from 'ng-multiselect-dropdown';
   styleUrls: ['./dropdown.component.css']
 })
 export class DropdownComponent {
+
+  constructor(private api : DataService){
+
+  }
+
   dropdownList : any[] = [];
   selectedItems : any [] = [];
   dropdownSettings : IDropdownSettings = {};
@@ -31,11 +37,18 @@ export class DropdownComponent {
       itemsShowLimit: 3,
       allowSearchFilter: true
     };
+    this.apiTypes();
   }
   onItemSelect(item: any) {
     console.log(item);
   }
   onSelectAll(items: any) {
     console.log(items);
+  }
+
+  apiTypes(){
+    this.api.getTypes().subscribe((data: any) => {
+      console.log(data);
+    })
   }
 }

@@ -3,11 +3,11 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { Chart } from 'chart.js';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-complaints',
+  templateUrl: './complaints.component.html',
+  styleUrls: ['./complaints.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class ComplaintsComponent implements OnInit{
 
   complaintsChart: any;
 
@@ -68,4 +68,5 @@ export class DashboardComponent implements OnInit {
       }
     })
   }
+
 }

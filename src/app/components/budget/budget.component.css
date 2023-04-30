@@ -4,19 +4,11 @@
     width: 600px;
 }
 
-.canvasStyleCharts {
+.canvasStyleCharts{
     height: 400px;
     width: 500px;
 }
 
-.example-card {
-    width: 26rem;
-    height: auto;
-}
-
-p{
-    line-height: 1.6rem;
-}
 h1 {
     color: black;
     font-weight: 500;
